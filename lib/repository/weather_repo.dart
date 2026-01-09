@@ -4,7 +4,7 @@ import 'package:weather_app/models/get_weather.dart';
 class WeatherRepo {
   var networkApiService = NetworkApiService();
 
-  final String _apiKey = 'bf532a760dc769911a3e43f40150cbc2';
+  final String _apiKey = 'YOUR_API_KEY';
 
   Future<GetWeather> getWeather(String cityName) async {
     var response = await networkApiService.get(
